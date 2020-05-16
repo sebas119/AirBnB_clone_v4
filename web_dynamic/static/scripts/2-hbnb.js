@@ -23,7 +23,12 @@ $(document).ready(function () {
   });
 
   $.getJSON('http://0.0.0.0:5001/api/v1/status/', function (data, textStatus, jqXHR) {
-    alert('status: ' + textStatus + ', data:' + data);
+    if (jqXHR.status === 200 && data.status === 'OK') {
+      $('DIV#api_status').addClass('available');
+      console.log($('DIV#api_status').css);
+    } else {
+      $('DIV#api_status').removeClass('available');
+      $('DIV#api_status').css({ 'background-color': '#cccccc' });
+    }
   });
-
 });
