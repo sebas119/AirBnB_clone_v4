@@ -1,11 +1,11 @@
 $(document).ready(function () {
   const amenities = {};
 
-  function setAmenities(dataId, dataName) {
+  function setAmenities (dataId, dataName) {
     amenities[dataId] = dataName;
   }
 
-  function delAmenity(dataId) {
+  function delAmenity (dataId) {
     delete amenities[dataId];
   }
 

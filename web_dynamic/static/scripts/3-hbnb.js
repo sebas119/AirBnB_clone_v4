@@ -1,15 +1,15 @@
 $(document).ready(function () {
   const amenities = {};
 
-  function setAmenities(dataId, dataName) {
+  function setAmenities (dataId, dataName) {
     amenities[dataId] = dataName;
   }
 
-  function delAmenity(dataId) {
+  function delAmenity (dataId) {
     delete amenities[dataId];
   }
 
-  function placeTemplate(place) {
+  function placeTemplate (place) {
     const guest = (place.max_guest !== 1) ? 'Guests' : 'Guest';
     const bedroom = (place.number_rooms !== 1) ? 'Bedrooms' : 'Bedroom';
     const bathroom = (place.number_bathrooms !== 1) ? 'Bathrooms' : 'Bathroom';
@@ -30,7 +30,7 @@ $(document).ready(function () {
         ${description}
       </div>
     </article>`
-    )
+    );
   }
 
   $('.amenities .popover ul li input').on('click', function () {
@@ -55,7 +55,7 @@ $(document).ready(function () {
     }
   });
 
-  function placeSearch(filters) {
+  function placeSearch (filters) {
     let html = '';
     $.ajax({
       url: 'http://0.0.0.0:5001/api/v1/places_search/',
@@ -64,13 +64,13 @@ $(document).ready(function () {
       data: JSON.stringify(filters),
       dataType: 'json',
       success: function (data) {
-        $.each(data, (index, value) => html += placeTemplate(value));
+        $.each(data, (index, value) => { html += placeTemplate(value); });
         $('SECTION.places').html(html);
       }
     });
   }
 
-  function main() {
+  function main () {
     placeSearch({});
   }
   main();
