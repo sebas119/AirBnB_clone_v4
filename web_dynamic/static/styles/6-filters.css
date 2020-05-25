@@ -58,7 +58,19 @@ button:hover {
     white-space: nowrap;
 }
 
+.locations h4 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 1.2em;
+    white-space: nowrap;
+}
+
 .amenities input[type=checkbox] {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.locations input[type=checkbox] {
     vertical-align: middle;
     margin-right: 10px;
 }
