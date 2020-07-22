@@ -1,4 +1,23 @@
-# AirBnB Clone - The Console
+# AirBnB Clone
+
+<p align="center">
+  <img src="web_dynamic/static/images/hbnb-logo.png"
+       alt="Holbertonbnb logo"
+       width="500"
+  >
+</p>
+
+## Overview
+
+Holbertonbnb is a complete full-stack web application, integrating a MySQL database and Flask RESTful API with a dynamic HTML5/CSS3/jQuery front-end.
+
+<p align="center">
+  <img src="web_dynamic/static/images/hbnb-stack.png"
+       alt="Holbertonbnb logo"
+       width="750"
+  >
+</p>
+
 The console is the first segment of the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
 
 #### Functionalities of this command interpreter:
@@ -22,7 +41,7 @@ The console is the first segment of the AirBnB project at Holberton School that 
 This project is interpreted/tested on Ubuntu 14.04 LTS using python3 (version 3.4.3)
 
 ## Installation
-* Clone this repository: `git clone "https://github.com/alexaorrico/AirBnB_clone.git"`
+* Clone this repository: `git clone "https://github.com/sebaslherrera/AirBnB_clone_v4"`
 * Access AirBnb directory: `cd AirBnB_clone`
 * Run hbnb(interactively): `./console` and enter command
 * Run hbnb(non-interactively): `echo "<command>" | ./console.py`
@@ -150,15 +169,39 @@ EOF  all  create  destroy  help  quit  show  update
 (hbnb) quit
 ```
 
-## Bugs
-No known bugs at this time. 
+## Dependencies
+
+Application:
+
+| Tool/Library | Version |
+| ------------ | ------- |
+| Python       | ^3.6.4  |
+| MySQL        | ^5.6.0  |
+| Flask        | ^1.0.3  |
+| flasgger     | ^0.9.2  |
+| Flask-Cors   | ^3.0.8  |
+| mysqlclient  | ^1.3.10 |
+| SQLAlchemy   | ^1.3.5  |
+
+
+Deployment:
+
+| Tool/Library | Version |
+| ------------ | ------- |
+| Python       | ^3.7.3  |
+| gunicorn     | ^19.9.0 |
+| Fabric       | ^2.4.0  |
+| Puppet       | ^5.4.0  |
+
 
 ## Authors
+Sebastian Lopez H - [Github](https://github.com/sebaslherrera) / [Twitter](https://twitter.com/sebaslherrera)  / [LinkedIn](https://www.linkedin.com/in/sebaslherrera/)  
 Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
 Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
 David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
 
 Second part of Airbnb: Joann Vuong
+
 ## License
-Public Domain. No copy write protection. 
+This project is licensed under the MIT License
